@@ -1,3 +1,70 @@
 // customize bootstrap variables here:
 @import "variables";
 @import "bootstrap";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+
+$base-font-size: 15px;
+$base-line-height: $base-font-size * 1.5;
+@include establish-baseline;
+$h1: $base-font-size *3;
+$h2: $base-font-size *2.666;
+$h3: $base-font-size *2.333;
+$h4: $base-font-size *2;
+$h5: $base-font-size *1.666;
+$h6: $base-font-size *1.333;
+
+@mixin heading($heading-name) {
+	@include adjust-font-size-to($heading-name);
+	margin-bottom: rhythm(1, $heading-name);
+	margin-top: 0;
+}
+
+ p, h1, h2, h3, h4, h5, h6 {
+		@include reset-box-model;
+}
+
+// code
+
+
+body {
+	font-size:$base-font-size;
+	line-height:$base-line-height;
+}
+
+p {
+	@include trailer(1);
+}
+
+
+
+
+h1 {
+	@include heading($h1);
+}
+h2 {
+	@include heading($h2);
+}
+h3 {
+	@include heading($h3);
+}
+h4 {
+	@include heading($h4);
+}
+h5 {
+	@include heading($h5);
+}
+h6 {
+	@include heading($h6);
+}
+
+.container {
+	@include column-count(2);
+	@include column-gap(3em);
+	margin-top:100px;	
+}
+
+
+
+
