@@ -7,6 +7,9 @@
 @import "compass/layout/stretching";
 @import "buttons";
 @import "typography";
+$primary-bg:#ccc;
+$secondary-bg:#aaa;
+$gray-trans:rgba(0,0,0,0.1);
 
 
 @mixin full-overlay() {
@@ -317,8 +320,46 @@ background-color: #e0e0e0;background-image:url('data:image/svg+xml;base64,PHN2Zy
 .page-header {
 	height:152px;
 	background-color:#eee;
+	margin:0;
 }
 
+
+//services
+.services-design {
+	background-color: $primary-bg;
+	.alpha {
+		border-right:2px solid $gray-trans;
+	}
+
+.icon-lg {
+		background-color:adjust-lightness($secondary-bg, 10);
+	}
+}
+.services-development {
+	background-color: $secondary-bg;
+	.alpha {
+		border-left:2px solid $gray-trans;
+	}
+
+.icon-lg {
+		background-color:adjust-lightness($primary-bg, -50);
+	}
+}
+.services-design, .services-development {
+	@include adjust-font-size-to(16px);
+	padding-top:rhythm(3);
+	padding-bottom:rhythm(3);
+	.alpha {
+		text-align: center;
+		padding-left:50px;
+		padding-right:50px;
+		h2 {
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+	}
+
+}
 //footer 
 
 .footer {

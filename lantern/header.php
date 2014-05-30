@@ -12,7 +12,7 @@
 		        <ul class="nav navbar-nav">
 			        <li class="active"><a href="index.php">Home</a></li>
 			        <li><a href="portfolio.php">Portfolio</a></li>
-			        <li><a href="#">Services</a></li>
+			        <li><a href="services.php">Services</a></li>
 			        <li><a href="#">Contact</a></li>
 			        <li><a href="#">Blog</a></li>
 		  		</ul>
