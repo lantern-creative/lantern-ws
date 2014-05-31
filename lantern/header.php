@@ -13,8 +13,8 @@
 			        <li class="active"><a href="index.php">Home</a></li>
 			        <li><a href="portfolio.php">Portfolio</a></li>
 			        <li><a href="services.php">Services</a></li>
-			        <li><a href="#">Contact</a></li>
-			        <li><a href="#">Blog</a></li>
+			        <li><a href="contact.php">Contact</a></li>
+			        <li><a href="blog.php">Blog</a></li>
 		  		</ul>
 	        </div>
         </div>
