@@ -5,7 +5,7 @@
   	  <link rel="stylesheet" type="text/css" href="icons/flaticon.css"> 
   </head>
   <body>
-  	<div class="scroll-menu navbar navbar-fixed-top navbar-inverse"  data-spy="affix" data-offset-top="2">
+  	<div class="scroll-menu navbar navbar-fixed-top navbar-inverse"  data-spy="affix" data-offset-top="155">
   	<div class="container">
 	  	<a class="navbar-brand" href="#" style="padding-top:14px;padding-left:15px;">Lantern <span class="text-muted">Creative</span></a> 
 	  		<div class="navbar-inverse navbar-right">

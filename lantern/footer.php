@@ -71,19 +71,20 @@
   	  	<script src="js/bootstrap/affix.js">
   	  	</script>
   	 	<script>
-//		  var div = $('.scroll-menu');
-//		  var lastScrollTop = 0;
-//
-//		   $(window).scroll(function(event){
-//		   var st = $(this).scrollTop();
-//		   if (st > lastScrollTop){
-//		       div.stop(true,false).delay(200).fadeOut(600);
-//		   }
-//		    else {
-//		       div.delay(500).stop(true,false).fadeIn(600)
-//		   }
-//		  lastScrollTop = st;
-//		});
+	  var div = $('.affix');
+    var div2 = $('.scroll-menu');
+	  var lastScrollTop = 0;
+
+		   $(window).scroll(function(event){
+		   var st = $(this).scrollTop();
+		   if (st > lastScrollTop){
+		       div2.stop(true,true).delay(600).fadeOut(600);
+		   }
+		    else {
+		       div2.stop(true,true).delay(1000).fadeIn(600);
+		   }
+		  lastScrollTop = st;
+		});
   </script>
   </body>
 </html>

@@ -1,6 +1,9 @@
 <?php include 'header.php'; ?>
 <div class="page-header">
 </div>
+<div class="services-banner">
+<h6 class="text-center"> <a href="#">Asthetics</a> | <a href="#">Development</a> | <a href="#">Proccess</a></h6>
+</div>
 <div class="services-design">
 	<div class="container-fluid">
 		<div class="row">
