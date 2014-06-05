@@ -32,6 +32,12 @@ html, body {
 		@include reset-box-model;
 }
 
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 p {
 	@include trailer(1);
 }
@@ -53,4 +59,23 @@ h5 {
 }
 h6 {
 	@include heading($h6);
+}
+
+blockquote {
+	footer {
+		float:right;
+		@include adjust-font-size-to(16px);
+		color:$gray;
+		&:before {
+			content:"";
+		}
+		.small {
+			@include adjust-font-size-to(12px);
+			&:before {
+			content:"";
+		}
+		
+		}
+	}
+
 }

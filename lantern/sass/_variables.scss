@@ -102,9 +102,9 @@ $brand-danger:          #d9534f;
 // $line-height-large:         1.33
 // $line-height-small:         1.5
 
-// $border-radius-base:        4px
-// $border-radius-large:       6px
-// $border-radius-small:       3px
+ $border-radius-base:        0px;
+  $border-radius-large:       0px;
+ $border-radius-small:       0px;
 
 //* Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff
@@ -497,11 +497,11 @@ $brand-danger:          #d9534f;
 //##
 
 //* Popover body background color
-// $popover-bg:                          #fff
+ $popover-bg:                          adjust-lightness($brand-primary, 10);
 //* Popover maximum width
-// $popover-max-width:                   276px
+ $popover-max-width:                   400px;
 //* Popover border color
-// $popover-border-color:                rgba(0,0,0,.2)
+ //$popover-border-color:                rgba(0,0,0,0);
 //* Popover fallback border color
 // $popover-fallback-border-color:       #ccc
 
